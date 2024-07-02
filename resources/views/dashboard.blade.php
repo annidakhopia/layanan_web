@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #f0f0f0;
@@ -30,8 +30,9 @@
             border-radius: 8px;
             margin-bottom: 20px;
             display: inline-block;
-            width: 200px;
+            width: 300px;
             text-align: center;
+            justify-content: space-between;
         }
 
         .card-green {
@@ -58,10 +59,10 @@
         <nav class="menu">
             <ul>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Data</a></li>
-                <li><a href="#">Pembayaran Siswa</a></li>
+                <li><a href="/tahunajaran">Data</a></li>
+                <li><a href="/pembayaran-siswa">Pembayaran Siswa</a></li>
                 <li><a href="#">Keuangan</a></li>
-                <li><a href="#">Pemasukan & Pengeluaran</a></li>
+                <li><a href="pengeluaran">Pemasukan & Pengeluaran</a></li>
                 <li><a href="#">Laporan</a></li>
                 <li><a href="#">Informasi</a></li>
                 <li><a href="#">Pengguna</a></li>

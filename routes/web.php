@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PengeluaranController;
 
 
 /*
@@ -26,7 +27,13 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware('auth');
-
+Route::get('/tahunajaran', function () {
+    return view('tahunajaran');
+});
+// routes/web.php
+Route::get('/pembayaran-siswa', [App\Http\Controllers\PembayaranSiswaController::class, 'index'])->name('pembayaran-siswa.index');
+// routes/web.php
+Route::get('/pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index'])->name('pengeluaran.index');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

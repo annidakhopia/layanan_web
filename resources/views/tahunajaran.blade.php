@@ -115,19 +115,6 @@
                         <th>Aksi</th>
                     </tr>
                 </thead>
-                <tbody>
-                    @foreach ($tahunAjaran as $item)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $item->tahun_pelajaran }}</td>
-                        <td><span class="badge bg-success">{{ $item->status }}</span></td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
             </table>
         </div>
     </div>
